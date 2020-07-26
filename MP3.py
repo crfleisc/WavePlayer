@@ -11,7 +11,7 @@ waveObj = sa.WaveObject.from_wave_file("./culex.wav")
 while True:
     event, values = window.read()
     print(event, values)
-    if event in (sg.WIN_CLOSED, 'Quit'):
+    if event in (sg.WIN_CLOSED, 'Exit'):
         break
     if event == 'Play':
         play_obj = waveObj.play()
